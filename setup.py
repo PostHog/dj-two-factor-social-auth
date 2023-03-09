@@ -46,16 +46,16 @@ history = open("HISTORY.rst").read().replace(".. :changelog:", "")
 requirements = open("requirements.txt").readlines()
 
 setup(
-    name="dj-two-factor-social-auth",
+    name="posthog-dj-two-factor-social-auth",
     version=version,
-    description="App connecting django-two-factor-auth and django-social-auth. "
+    description="PostHog-maintained fork of dj-two-factor-social-auth. Original description: App connecting django-two-factor-auth and django-social-auth. "
     "If user authenticates through social auth, he will be enforced to go through 2FA (if he has it enabled)."
     "",
     long_description=readme + "\n\n" + history,
     long_description_content_type="text/x-rst",
     author="Petr Dlouhý",
     author_email="petr.dlouhy@email.cz",
-    url="https://github.com/PetrDlouhy/dj-2fa-social-auth",
+    url="https://github.com/PostHog/dj-two-factor-social-auth",
     packages=[
         "social_2fa",
     ],
